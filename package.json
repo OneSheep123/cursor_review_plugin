@@ -1,0 +1,22 @@
+{
+  "name": "cursor-branch-review",
+  "version": "0.1.0",
+  "description": "比较当前分支与master分支并进行代码审核",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "review": "node src/index.js",
+    "review-dir": "node src/index.js --dir"
+  },
+  "bin": {
+    "branch-review": "./src/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "clipboardy": "^4.0.0",
+    "inquirer": "^9.2.7",
+    "open": "^9.1.0",
+    "simple-git": "^3.19.1"
+  }
+} 
